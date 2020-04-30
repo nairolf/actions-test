@@ -53,3 +53,4 @@
 
 # PHPStorm
 .idea
+/docker/.env

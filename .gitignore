@@ -54,3 +54,5 @@
 # PHPStorm
 .idea
 /docker/.env
+
+/.php_cs.cache

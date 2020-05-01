@@ -8,6 +8,6 @@ $c = $a . $b;
 
 dump($c);
 
-    if($c == 3 ) {
+if ($c == 3) {
     dump('foo');
 }

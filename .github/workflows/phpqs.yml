@@ -38,4 +38,7 @@ jobs:
         run: echo "::add-matcher::${{ runner.tool_cache }}/php.json"
       
       - name: Run PHP-CS-Fixer
-        run: php-cs-fixer fix --dry-run --using-cache=false --rules=@Symfony,@PSR2 --format=checkstyle . | cs2pr
+        run: php-cs-fixer fix --dry-run --using-cache=false --rules=@PSR2 --format=checkstyle . | cs2pr
+      
+      - name: Run PHPStan
+        run: phpstan analyse --error-format=checkstyle public | cs2pr

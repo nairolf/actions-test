@@ -11,3 +11,5 @@ dump($c);
     if($c == 3 ) {
     dump('foo');
 }
+
+echo $d;
